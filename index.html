@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de la Ingeniería Multimedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
+    <nav>
+        <a class="nav-logo" href="#inicio">
+            <span></span> Ing. Multimedia
+        </a>
+        <ul class="nav-links">
+            <li><a href="#que-es">Multimedia</a></li>
+            <li><a href="#tipos">Tipos</a></li>
+            <li><a href="#ingenieria">Ingeniería</a></li>
+            <li><a href="#fases">Fases</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ── HERO ────────────────────────────────────────────────────────────── -->
+    <section id="inicio">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="hero-container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6vw; width: 100%; position: relative; z-index: 2;">
+            <div class="hero-content" style="flex: 1 1 auto; min-width: 300px; max-width: 750px;">
+                <div class="hero-tag">
+                    ✦ UNAD · Ingeniería Multimedia · 2026
+                </div>
+
+                <h1 class="hero-title">
+                    Fundamentos de la<br>
+                    <span class="accent-word">Ingeniería</span><br>
+                    Multimedia
+                </h1>
+
+                <p class="hero-sub">
+                    Explora los conceptos esenciales de la ingeniería multimedia: qué es, sus tipos,
+                    el rol del profesional y las fases de desarrollo de productos digitales.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#que-es" class="btn-primary">Comenzar exploración →</a>
+                    <a href="#fases" class="btn-secondary">Ver fases de desarrollo</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Tipos de productos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Fases de desarrollo</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Formatos multimedia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA DIVERTIDA -->
+            <div class="hero-fun-card" style="flex: 0 1 350px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.4); opacity: 0; animation: fadeUp 0.8s ease forwards 1.4s; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent2));"></div>
+                <h3 style="font-family: 'Syne', sans-serif; font-size: 1.8rem; color: var(--accent); margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">Hola! <span style="font-size: 2.2rem;">:3</span></h3>
+                <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 1.5rem; height: 1.5rem; display: flex; align-items: center;" id="funGreeting">Ingrese su nombre</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                    <input type="text" id="funNameInput" placeholder="Tu nombre..." style="width: 100%; padding: 0.9rem 1.2rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-family: inherit; font-size: 0.95rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+                    <button onclick="submitFunName()" style="width: 100%; padding: 0.9rem 1.2rem; border-radius: 10px; background: var(--accent2); color: var(--bg); border: none; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(181, 77, 255, 0.3)'" onmouseout="this.style.transform='none'; this.style.boxShadow='none'">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ¿QUÉ ES MULTIMEDIA? ─────────────────────────────────────────────── -->
+    <section id="que-es" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Fundamentos</p>
+                <h2 class="section-title">¿Qué es la<br>Multimedia?</h2>
+                <p class="section-desc">
+                    La multimedia integra múltiples formas de comunicación digital en un solo entorno interactivo,
+                    transformando cómo aprendemos, nos entretenemos y nos comunicamos.
+                </p>
+
+                <!-- IMAGEN CONCEPTUAL -->
+                <img src="assets/que_es_multimedia.png" alt="Concepto de Multimedia" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); margin-bottom: 3.5rem;" class="reveal">
+            </div>
+
+            <div class="que-es-grid reveal">
+                <div class="definition-block">
+                    <p>
+                        La multimedia es la <strong>integración de dos o más medios de comunicación</strong> —texto,
+                        imagen, audio,
+                        video y animación— controlados de forma interactiva por un sistema informático.
+                        A diferencia de los medios tradicionales, la multimedia permite que el usuario
+                        <strong>participe activamente</strong> en la experiencia, navegando, eligiendo y creando.
+                    </p>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">🔗</div>
+                    <div class="card-title">Integración</div>
+                    <div class="card-text">Combina texto, imagen, audio, video y animación en un solo sistema coherente
+                        y unificado.</div>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">🖱️</div>
+                    <div class="card-title">Interactividad</div>
+                    <div class="card-text">El usuario controla la experiencia: decide qué ver, cuándo y en qué orden,
+                        generando engagement activo.</div>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-title">Digital</div>
+                    <div class="card-text">Se fundamenta en sistemas computacionales que procesan, almacenan y
+                        transmiten los diferentes medios.</div>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">🌐</div>
+                    <div class="card-title">Hipermedia</div>
+                    <div class="card-text">Extiende el hipertexto al incluir enlaces entre diferentes tipos de medios,
+                        creando redes de contenido navegables.</div>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">📡</div>
+                    <div class="card-title">Transmisión</div>
+                    <div class="card-text">Puede distribuirse en tiempo real o de forma diferida a través de redes
+                        locales o internet.</div>
+                </div>
+
+                <div class="caracteristica-card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">No linealidad</div>
+                    <div class="card-text">El contenido no sigue una secuencia fija; el usuario construye su propio
+                        recorrido según sus intereses.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TIPOS DE MULTIMEDIA ───────────────────────────────────────────────── -->
+    <section id="tipos" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Clasificación</p>
+                <h2 class="section-title">Tipos de productos<br>multimedia</h2>
+                <p class="section-desc">
+                    El ingeniero multimedia puede desarrollar distintos tipos de productos según el objetivo
+                    comunicativo, el público y el canal de distribución.
+                </p>
+            </div>
+
+            <div class="tipos-grid reveal">
+                <div class="tipo-card">
+                    <div class="tipo-emoji">📱</div>
+                    <div class="tipo-name">Aplicación Móvil</div>
+                    <div class="tipo-desc">Software diseñado para dispositivos móviles que integra múltiples medios para
+                        ofrecer servicios, entretenimiento o aprendizaje al usuario.</div>
+                    <span class="tipo-tag">App / Mobile</span>
+                </div>
+
+                <div class="tipo-card">
+                    <div class="tipo-emoji">🌐</div>
+                    <div class="tipo-name">Sitio Web</div>
+                    <div class="tipo-desc">Conjunto de páginas accesibles mediante un navegador que integran texto,
+                        imagen, video y audio para informar, vender o educar.</div>
+                    <span class="tipo-tag">Web</span>
+                </div>
+
+                <div class="tipo-card">
+                    <div class="tipo-emoji">🎮</div>
+                    <div class="tipo-name">Videojuego</div>
+                    <div class="tipo-desc">Producto interactivo de entretenimiento que combina gráficos, sonido,
+                        narrativa y mecánicas de juego en un entorno digital inmersivo.</div>
+                    <span class="tipo-tag">Gaming</span>
+                </div>
+
+                <div class="tipo-card">
+                    <div class="tipo-emoji">📖</div>
+                    <div class="tipo-name">Libro Digital</div>
+                    <div class="tipo-desc">Publicación electrónica que enriquece el texto tradicional con elementos
+                        multimedia como audio, video e hipervínculos interactivos.</div>
+                    <span class="tipo-tag">E-Book</span>
+                </div>
+
+                <div class="tipo-card">
+                    <div class="tipo-emoji">🎬</div>
+                    <div class="tipo-name">Video Educativo</div>
+                    <div class="tipo-desc">Producción audiovisual con propósito pedagógico que facilita el aprendizaje
+                        mediante la combinación de imagen, narración y animación.</div>
+                    <span class="tipo-tag">E-Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── INGENIERÍA MULTIMEDIA ─────────────────────────────────────────────── -->
+    <section id="ingenieria" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Profesión</p>
+                <h2 class="section-title">Ingeniería<br>Multimedia</h2>
+                <p class="section-desc">
+                    El ingeniero multimedia diseña, produce e implementa productos digitales que integran
+                    múltiples medios con propósito comunicativo, educativo o de entretenimiento.
+                </p>
+            </div>
+
+            <div class="ing-layout">
+                <div class="ing-text reveal">
+                    <p>
+                        La <strong>Ingeniería Multimedia</strong> es una disciplina que combina conocimientos de
+                        ingeniería de software, diseño audiovisual, comunicación y pedagogía para crear
+                        productos digitales interactivos. Su campo de acción abarca desde aplicaciones
+                        educativas hasta videojuegos, simuladores y plataformas web.
+                    </p>
+                    <p>
+                        En la UNAD, el programa forma profesionales capaces de <strong>planear, diseñar,
+                            desarrollar y evaluar</strong> contenidos multimedia que respondan a necesidades reales
+                        de comunicación en la sociedad del conocimiento.
+                    </p>
+                    <p>Algunos de los roles que puede desempeñar un ingeniero multimedia:</p>
+                    <ul class="rol-list">
+                        <li>Diseñador y desarrollador de contenidos digitales interactivos</li>
+                        <li>Productor audiovisual para plataformas educativas y corporativas</li>
+                        <li>Desarrollador de videojuegos y experiencias inmersivas</li>
+                        <li>Gestor de proyectos de transformación digital</li>
+                        <li>Especialista en experiencia de usuario (UX) y usabilidad</li>
+                        <li>Consultor en estrategias de comunicación digital</li>
+                    </ul>
+                </div>
+
+                <div class="video-block reveal">
+                    <div class="video-wrapper">
+                        <video controls style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+                            <source src="assets/multimedia_video.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                    </div>
+                    <p class="video-caption">
+                        Saza, I. D. (2020). Definición y Características de la Multimedia [Video]. UNAD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FASES DE DESARROLLO ───────────────────────────────────────────────── -->
+    <section id="fases" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Proceso</p>
+                <h2 class="section-title">Fases de desarrollo<br>multimedia</h2>
+                <p class="section-desc">
+                    Todo producto multimedia sigue un ciclo de vida estructurado. Haz clic en cada fase
+                    para conocer sus actividades y entregables.
+                </p>
+
+                <!-- IMAGEN FASES -->
+                <img src="assets/fases.png" alt="Fases de desarrollo multimedia" style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 16px; margin-bottom: 3rem;" class="reveal">
+            </div>
+
+            <div class="timeline reveal" id="timeline">
+
+                <div class="tl-item active" data-index="0">
+                    <div class="tl-dot">01</div>
+                    <div class="tl-header">
+                        <span class="tl-phase">Preproducción</span>
+                        <span class="tl-badge">Planificación</span>
+                    </div>
+                    <div class="tl-body">
+                        Es la fase de planificación y diseño. Se definen el guion multimedia, la estructura
+                        de navegación, los recursos necesarios y el público objetivo. Aquí se elabora la
+                        matriz de preproducción que sirve como hoja de ruta del proyecto.
+                        <ul>
+                            <li>Definición del tema y objetivo comunicativo</li>
+                            <li>Elaboración del guion de interacción</li>
+                            <li>Diseño de la arquitectura de navegación</li>
+                            <li>Selección de formatos multimedia a usar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-index="1">
+                    <div class="tl-dot">02</div>
+                    <div class="tl-header">
+                        <span class="tl-phase">Producción</span>
+                        <span class="tl-badge">Desarrollo</span>
+                    </div>
+                    <div class="tl-body">
+                        Se construye el producto multimedia siguiendo el guion definido. Se desarrollan
+                        todos los elementos (texto, imagen, audio, video, animación) y se integran
+                        en el sistema. Al finalizar, se realizan pruebas de calidad.
+                        <ul>
+                            <li>Desarrollo del código o la plataforma</li>
+                            <li>Creación e integración de recursos multimedia</li>
+                            <li>Pruebas de funcionamiento de cada elemento</li>
+                            <li>Corrección de errores detectados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-index="2">
+                    <div class="tl-dot">03</div>
+                    <div class="tl-header">
+                        <span class="tl-phase">Implementación</span>
+                        <span class="tl-badge">Despliegue</span>
+                    </div>
+                    <div class="tl-body">
+                        El producto finalizado se publica en una plataforma de acceso público para que
+                        los usuarios puedan interactuar con él. Se verifican la accesibilidad, los
+                        tiempos de carga y la compatibilidad con distintos dispositivos.
+                        <ul>
+                            <li>Publicación en plataforma de nube o hosting</li>
+                            <li>Verificación del enlace de acceso público</li>
+                            <li>Pruebas en diferentes navegadores y dispositivos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-index="3">
+                    <div class="tl-dot">04</div>
+                    <div class="tl-header">
+                        <span class="tl-phase">Postproducción</span>
+                        <span class="tl-badge">Cierre</span>
+                    </div>
+                    <div class="tl-body">
+                        Se documenta todo el proceso en un informe final que recoge cada fase, las
+                        decisiones tomadas, los resultados obtenidos y las lecciones aprendidas.
+                        Incluye el enlace al producto publicado y las referencias bibliográficas.
+                        <ul>
+                            <li>Redacción del informe final por fases</li>
+                            <li>Respuesta al cuestionario de reflexión</li>
+                            <li>Verificación del enlace y entrega al docente</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ROL DEL INGENIERO ────────────────────────────────────────────────── -->
+    <section id="rol" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Reflexión</p>
+                <h2 class="section-title">Entonces... ¿Qué es ser un<br>ingeniero multimedia?</h2>
+            </div>
+            
+            <div class="ing-layout">
+                <div class="ing-text reveal">
+                    <p class="section-desc">
+                        Ser un ingeniero multimedia va más allá de solo saber usar software de diseño o conocer un lenguaje de programación. Es ser un <strong>arquitecto de experiencias interactivas</strong>.
+                    </p>
+                    <p>
+                        Implica entender las necesidades del usuario, estructurar la información de manera lógica y atractiva, y unir disciplinas creativas y técnicas para resolver problemas. Un profesional en esta área es el puente entre el diseño artístico y la funcionalidad del código.
+                    </p>
+                    <p>
+                        Además, está en constante aprendizaje, siendo capaz de adaptarse a nuevas tecnologías (como realidad aumentada, inteligencia artificial o motores web avanzados) para crear soluciones que educan, entretienen y mejoran la comunicación digital de la sociedad.
+                    </p>
+                </div>
+
+                <img src="assets/que_es_ser_ingeniero.jpeg" alt="Rol del Ingeniero Multimedia" style="width: 100%; height: 100%; min-height: 250px; object-fit: cover; border-radius: 16px; border: 1px solid var(--border);" class="reveal">
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACTO / CRÉDITOS ──────────────────────────────────────────────── -->
+    <section id="contacto" class="section">
+        <div class="section-inner">
+            <div class="reveal">
+                <p class="section-label">Créditos</p>
+                <h2 class="section-title">Autoría del<br>proyecto</h2>
+                <p class="section-desc">
+                    Proyecto desarrollado como componente práctico del curso Introducción a la
+                    Ingeniería Multimedia de la UNAD, periodo 2026.
+                </p>
+            </div>
+
+            <div class="contacto-grid">
+
+                <!-- Tarjeta de créditos -->
+                <div class="creditos-card reveal">
+                    <p class="creditos-role">Estudiante · Autora del proyecto</p>
+                    <h3 class="creditos-name">Diana Sofia<br>Peña</h3>
+                    <p class="creditos-programa">
+                        Ingeniería Multimedia · Universidad Nacional Abierta y a Distancia — UNAD
+                    </p>
+                    <div class="creditos-meta">
+                        <div class="meta-row">
+                            <span class="meta-key">Curso</span>
+                            <span class="meta-val">Introducción a la Ingeniería Multimedia</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Código</span>
+                            <span class="meta-val">202456784</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Actividad</span>
+                            <span class="meta-val">Componente práctico — Sitio web educativo</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Tema</span>
+                            <span class="meta-val">Fundamentos del Ingeniero Multimedia</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Periodo</span>
+                            <span class="meta-val">Marzo — Mayo 2026</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Institución</span>
+                            <span class="meta-val">UNAD — Colombia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio player -->
+                <div class="audio-block reveal">
+                    <div>
+                        <h3>Formato de audio</h3>
+                        <p>
+                            El siguiente clip de audio es una introducción narrada a los fundamentos
+                            del ingeniero multimedia, incluido como uno de los formatos multimedia
+                            requeridos por la guía de actividades.
+                        </p>
+                    </div>
+
+                    <div class="audio-player">
+                        <div class="audio-info">
+                            <div class="audio-icon">🎙️</div>
+                            <div class="audio-meta">
+                                <strong>Introducción — Ing. Multimedia</strong>
+                                <span>Narración · Formato de audio</span>
+                            </div>
+                        </div>
+                        <div class="audio-controls">
+                            <button class="audio-btn" id="playBtn" onclick="toggleAudio()">▶</button>
+                            <div class="audio-progress">
+                                <div class="progress-bar" onclick="seekAudio(event)">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                                <div class="audio-time">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">—</span>
+                                </div>
+                            </div>
+                            <div class="volume-control" style="display: flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                                <span style="font-size: 1.1rem; color: rgba(255,255,255,0.7); cursor: pointer;" onclick="toggleMute()" id="muteIcon">🔊</span>
+                                <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" style="width: 60px; accent-color: var(--accent); cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio HTML5 oculto -->
+                    <audio id="audioEl" preload="metadata">
+                        <source src="assets/audio_multimedia.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+            </div>
+
+            <!-- Referencias bibliográficas -->
+            <div class="refs-block reveal">
+                <h3>Referencias bibliográficas</h3>
+                <div class="ref-item">
+                    Montañez, L. (Productor). (2019). <em>Multimedia</em> [Repositorio UNAD].
+                    <a href="https://repository.unad.edu.co/handle/10596/26914" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://repository.unad.edu.co/handle/10596/26914</a>
+                </div>
+                <div class="ref-item">
+                    Montañez, L. (Productor). (2019). <em>Fases de desarrollo multimedia</em> [Repositorio UNAD].
+                    <a href="https://repository.unad.edu.co/handle/10596/26916" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://repository.unad.edu.co/handle/10596/26916</a>
+                </div>
+                <div class="ref-item">
+                    Montañez, L. (Productor). (2019). <em>Ingeniería Multimedia</em> [Repositorio UNAD].
+                    <a href="https://repository.unad.edu.co/handle/10596/26937" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://repository.unad.edu.co/handle/10596/26937</a>
+                </div>
+                <div class="ref-item">
+                    Saza, I. D. (2020). <em>Definición y Características de la Multimedia</em> [Video].
+                    <a href="https://repository.unad.edu.co/handle/10596/38320" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://repository.unad.edu.co/handle/10596/38320</a>
+                </div>
+                <div class="ref-item">
+                    Saza, I. D. (2022). <em>Tipologías Multimedia</em> [Objeto virtual de aprendizaje OVA].
+                    Repositorio Institucional UNAD. <a href="https://repository.unad.edu.co/handle/10596/49282" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://repository.unad.edu.co/handle/10596/49282</a>
+                </div>
+                <div class="ref-item">
+                    Universidad Nacional Abierta y a Distancia UNAD. (2019). <em>Ingeniería multimedia</em>.
+                    <a href="https://estudios.unad.edu.co/ingenieria-multimedia" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">https://estudios.unad.edu.co/ingenieria-multimedia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ───────────────────────────────────────────────────────────── -->
+    <footer>
+        <p>© 2026 · <strong>Diana Sofia Peña</strong> · UNAD — Ingeniería Multimedia</p>
+        <p>Introducción a la Ingeniería Multimedia · 202456784</p>
+    </footer>
+
+    <!-- ── BOTÓN VOLVER ARRIBA ──────────────────────────────────────────────── -->
+    <a href="#inicio" id="back-top" title="Volver arriba">↑</a>
+
+    <!-- ── JS ───────────────────────────────────────────────────────────────── -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
